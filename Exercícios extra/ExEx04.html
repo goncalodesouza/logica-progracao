@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de Programação JavaScript</title>
+  </head>
+  <body>
+    <h1>Lógica de Programação JavaScript</h1>
+
+    <script>
+      var idade = parseInt(prompt("Qual a sua idade?"));
+      var bilhete = prompt("Tem bilhete? (sim/não)");
+      var temBilhete = bilhete == "sim";
+
+      if (idade >= 18 && temBilhete === true) {
+        alert("Pode entrar");
+      } else {
+        alert("Não pode entrar");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de Programação JavaScript</title>
+  </head>
+  <body>
+    <h1>Lógica de Programação JavaScript</h1>
+
+    <script>
+      var funcionario = prompt("É funcionário? (sim/não)");
+      var eFuncionario = funcionario == "sim";
+      var cartao = prompt("Tem cartao? (sim/não)");
+      var temCartao = cartao == "sim";
+      var admin = prompt("É admin? (sim/não)");
+      var eAdmin = admin == "sim";
+      var bloqueado = prompt("É bloqueado? (sim/não)");
+      var eBloqueado = bloqueado == "sim";
+
+      if (
+        ((eFuncionario === true && temCartao === true) || eAdmin === true) &&
+        !eBloqueado
+      ) {
+        alert("Pode entrar");
+      } else {
+        alert("Não pode entrar");
+      }
+    </script>
+  </body>
+</html>

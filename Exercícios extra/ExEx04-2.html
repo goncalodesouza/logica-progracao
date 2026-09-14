@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de Programação JavaScript</title>
+  </head>
+  <body>
+    <h1>Lógica de Programação JavaScript</h1>
+
+    <script>
+      var valorCompra = parseInt(prompt("Valor da compra"));
+      var cupao = prompt("Tem cupao? (sim/não)");
+      var temCupao = cupao == "sim";
+
+      if (
+        (valorCompra >= 100 && temCupao === false) ||
+        (valorCompra < 100 && temCupao === true) ||
+        (valorCompra >= 100 && temCupao === true)
+      ) {
+        alert("Tem direito a desconto");
+      } else {
+        alert("Não tem direito a desconto");
+      }
+    </script>
+  </body>
+</html>
