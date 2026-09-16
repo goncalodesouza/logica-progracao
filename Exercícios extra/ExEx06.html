@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de Programação JavaScript</title>
+  </head>
+  <body>
+    <h1>Lógica de Programação JavaScript</h1>
+
+    <script>
+      var numero1 = prompt("Digite um número");
+      numero1 = parseInt(numero1);
+      var numero2 = prompt("Digite outro número");
+      numero2 = parseInt(numero2);
+      var numero3 = prompt("Digite mais um número");
+      numero3 = parseInt(numero3);
+
+      if (numero1 > numero2 && numero1 > numero3) {
+        document.write("Numero1 é o maior");
+      } else {
+        if (numero2 > numero1 && numero2 > numero3) {
+          document.write("Numero2 é o maior");
+        } else {
+          if (numero3 > numero1 && numero3 > numero2) {
+            document.write("Numero3 é o maior");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
